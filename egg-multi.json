@@ -1,0 +1,42 @@
+{
+    "_comment": "POWERED BY ZAYDEN",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2024-04-20T09:40:04+08:00",
+    "name": "EGG MULTI ALL-IN-ONE",
+    "author": "owner@zayden.dev",
+    "description": "Egg Multi All-in-one",
+    "features": null,
+    "docker_images": {
+        "williamharrison\/aio": "williamharrison\/aio"
+    },
+    "file_denylist": [],
+    "startup": "{{CMD}}",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"\",\r\n    \"userInteraction\": []\r\n}",
+        "logs": "{}",
+        "stop": "^^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": null,
+            "container": "alpine:3.4",
+            "entrypoint": "ash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Start Command",
+            "description": "Command used to start the server.",
+            "env_variable": "CMD",
+            "default_value": "bash",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required",
+            "field_type": "text"
+        }
+    ]
+}
